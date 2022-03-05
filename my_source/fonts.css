@@ -1,0 +1,345 @@
+
+@font-face {
+  font-family: 'paybooc-Medium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'EliceDigitalBaeum_Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'EliceDigitalBaeum_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.prologue{ width: 100%; height: 100vh; position: relative;  }
+.proImgBox{ width: 450px; height: 450px; margin: auto; 
+    overflow: hidden;  
+    position: absolute; 
+    left: 50%; top: 50%; 
+    transform: translate(-50%, -50% ) ; 
+ }
+
+.proImg>img{ width: 100%;  }
+.proImg{ width: 450px; height: 450px; margin: auto;  
+    position: absolute;
+    opacity : 0 ;
+    left: 50%; top: 50%; 
+    transform: translate(-50%, -50% ) ;
+
+    animation: proAniOp 0.1s 0.4s forwards ;
+
+}
+.proImg0{ width: 300px; }
+.proImg1{ width: 300px; animation-delay: 0.9s; }
+.proImg2{ width: 350px; animation-delay: 1.5s; }
+.proImg3{ width: 350px; animation-delay: 2s; }
+.proImg4{ width: 400px; animation-delay: 2.6s; }
+.proImg5{ width: 400px; animation-delay: 3.1s; }
+.proImg6{ width: ; animation-delay: 3.7s; }
+.proImg7{ width: ; animation-delay: 4.2s; }
+.proImg8{  animation-delay: 4.8s; }
+.proImg9{  animation-delay: 5.2s; }
+
+.proImg11{  animation: proAniOp 0.5s 7.7s forwards ; }
+.proImg12{  animation: proAniOp 0.5s 8.7s forwards ; }
+
+.proImg13{  animation: proAniOp  1s 9.5s forwards ; }
+
+.proImg9, .proImg10{ opacity: 0; height: 0; 
+    top: 100%; transform: translate( -50%, -100%);
+    background-color: black;
+    animation: proAniTop 1s 5.0s forwards ; }        
+.proImg10{ 
+    animation: proAniTop 1s 6.1s forwards ; }        
+
+
+.activePro{ opacity: 1;}
+
+@keyframes proAniOp{  
+    to {
+        opacity : 1 ;
+    }         
+}
+@keyframes proAniTop{  
+    to {
+        height : 100% ;
+        opacity : 1 ;
+    }         
+}
+
+
+.proTextBox{ width: 450px; 
+  position: absolute;
+  left: 50%; top: 77%; 
+  transform: translate(-50%, -50% ) ;
+  color: rgb(192, 192, 192); font-size: 13px; cursor: pointer;
+  text-align: center;
+  opacity : 0 ;
+
+  display: flex; justify-content: space-between;
+  animation: proAniOp 0.4s  forwards ;
+}
+.proTextBox1{ width: 450px; 
+  position: absolute;
+  left: 50%; top: 77%; 
+  transform: translate(-50%, -50% ) ;
+  color: rgb(192, 192, 192); font-size: 13px; cursor: pointer;
+  text-align: center;
+  opacity : 0 ;
+
+  animation: proAniOp 0.4s  forwards ;
+}
+/*  로딩 페이지 end */
+
+
+.bg-dark a.star-off {
+  color: #fff;
+}
+/* .mb-120 {
+  margin-bottom: 120px !important;
+} */
+#bootstrap-overrides .mydiv3{
+  background-color: red;
+  /* width: 75%; */
+  /* float: left; */
+}
+
+
+.myFootWid{
+  display: flex; justify-content: space-evenly;
+}
+@media (min-width: 768px) {
+  .myFootWid {
+    /* width: 50%; */
+    display: block;
+  }
+}
+
+.myFont-dark{
+  color: #111;
+}
+
+
+
+/*  footer */
+
+p.footer img{ height: 25px;}
+p.footer img:nth-of-type(3){ height: 22px;}
+p.footer span{ 
+  display: inline-block; 
+  width: 25px; height: 25px; 
+ }
+
+/*--------------------------------------------------------------
+	Slider & Carousel
+--------------------------------------------------------------*/
+
+.myModule-slider{
+  /* display: block; */
+  position: relative;
+  height: 520px;
+}
+.my-slider{
+  width: 100%;
+  height: 520px;
+  position: relative;
+}
+.my-slider div{
+  height: 520px;
+}
+
+
+.my-caption {
+  position: absolute;
+  top: 1px;
+  display: table;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* -------------------------------------------------------------------
+General Styles - FlexSlider
+------------------------------------------------------------------- */
+.flex-direction-nav a,
+.flex-control-nav > li > a {
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.flex-direction-nav a {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 50%;
+  top: 0;
+  z-index: 10;
+  overflow: hidden;
+  opacity: 0;
+  margin: 0;
+}
+
+.flex-direction-nav .flex-prev {
+  opacity: 0;
+  left: 0;
+  cursor: url(../images/prev-light.png), e-resize;
+}
+
+.flex-direction-nav .flex-next {
+  opacity: 0;
+  right: 0;
+  cursor: url(../images/next-light.png), e-resize;
+}
+
+.flex-control-nav {
+  position: absolute;
+  width: auto;
+  left: 50%;
+  bottom: 20px;
+  z-index: 11;
+  text-align: center;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.flex-control-nav > li {
+  display: inline-block;
+  margin: 5px 3px;
+}
+
+.flex-control-nav > li > a {
+  background: transparent;
+  border: 1px solid #fff;
+  display: block;
+  height: 6px;
+  width: 6px;
+  border-radius: 6px;
+}
+
+.flex-control-nav > li > a:hover,
+.flex-control-nav > li > a.flex-active {
+  background: #fff;
+}
+
+/* -------------------------------------------------------------------
+Hero Slider
+------------------------------------------------------------------- */
+.hero-slider {
+  margin: 0 !important;
+}
+
+.hero-slider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+
+.hero-slider,
+.hero-slider .flex-viewport {
+  height: 100% !important;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-slider .slides {
+  height: 100% !important;
+  transition-delay: 1s;
+}
+
+.hero-slider .flex-direction-nav a {
+  width: 15%;
+}
+
+.hero-slider .slides li {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100% !important;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+/* Caption */
+/* .my-caption {
+  position: relative;
+  display: table;
+  height: 100%;
+  width: 70%;
+  margin: 0 auto;
+} */
+
+
+
+.caption-content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/*
+Photography Page Slider
+*/
+.photography-page .image-caption {
+  bottom: 20px;
+  position: absolute;
+  width: 35%;
+}
+
+.photography-page .image-caption .caption-text {
+  font-size: 24px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.photography-page .flex-control-nav {
+  left: 80%;
+  bottom: 20px;
+  z-index: 11;
+}
+
+/* -------------------------------------------------------------------
+General Styles - Owlcarousel
+------------------------------------------------------------------- */
+.owl-controls {
+  margin-top: 40px;
+}
+
+.owl-pagination div {
+  display: inline-block;
+}
+
+.owl-controls .owl-page span {
+  background: transparent;
+  border: 1px solid #111;
+  display: block;
+  height: 6px;
+  width: 6px;
+  margin: 0 3px 5px;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.owl-controls .owl-page.active span,
+.owl-controls.clickable .owl-page:hover span {
+  background: #111;
+}
+
+.owl-controls .owl-buttons > div {
+  display: inline-block;
+  margin: 5px;
+  font-size: 14px;
+  color: #111;
+}

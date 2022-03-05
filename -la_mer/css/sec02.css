@@ -1,0 +1,110 @@
+@charset 'utf-8';
+@font-face{ 
+    font-family: "impact" ;
+    src:url("../font/impact.ttf"); 
+ } 
+
+.section02Intro{ width: 100%; 
+    /* height: 1000px;         */
+    height: 1300px;        
+    /* margin-bottom: 200px;   */
+    background-color: #fff; 
+    position: absolute; top: 2400px; left: 1920px ;   
+    z-index: -1;
+    /* transition: 4s; */
+}
+.s02vid{ width: 90%; height: 400px; position: absolute; top: 50%;
+    left: 50%; 
+    transform: translate( -50%, -70%);
+    overflow: hidden; 
+}        
+.s02intTxt{ position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:240px; color: rgba(255, 255, 255, 0.8); 
+    font-family: "impact";
+    text-align: center;
+}
+/*  section02Intro end */
+
+
+.section02{ width: 100%; } 
+.section02{  position: relative; }   
+.s02innerBox{ 
+    display: flex; height: 1500px; padding-top: 100px;
+    /* transition: background-color 5s  linear; */
+    background-color: #02294D ;
+}
+
+.s02roomList{  width: 40%; height: 900px; padding: 82px  154px;  
+    position: sticky; top: 0;          
+}
+.s02roomListdes{ text-align: center;color: rgb(235, 248, 255);}
+.s02btnBox{  display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;  padding: 27px 50px; 
+}
+.s02btnBox div{  width: 123px ; height: 60px; text-align: center;
+    color: rgb(235, 248, 255);  
+    color: #222222;  
+}
+.s02btnBox div:hover{   
+}
+/* .s02btnBox span{ display: inline-block ;  border: 1px solid rgb(235, 248, 255); padding: 0 5px; transform: translateY(50px);   } */
+.s02btnBox span{ display: block ;  width: 80px; height: 20px; color: #fff;
+    /* border-bottom: 1px solid rgb(235, 248, 255);  */
+    padding: 0 5px;
+     transform: translateY(50px);  
+ }
+.s02btn2, .s02btn4, .s02btn6, .s02btn8{ transform: translateY(25px); }
+/* .s02btn1, .s02btn6{ background-color: #BD162A; }
+.s02btn2, .s02btn5{ background-color: #F8D304 ;  }
+.s02btnBox .s02btn3, .s02btnBox .s02btn8{ background-color: #fff; color: #414F63; }
+.s02btnBox .s02btn3 span, .s02btnBox .s02btn8 span{ border: 1px solid #414F63; }
+.s02btn4, .s02btn7{ background-color: #203FA6 ;   } */
+.s02btn1 span, .s02btn6 span{ box-shadow: inset 0 6px  #BD162A; }
+.s02btn2 span, .s02btn5 span{ box-shadow: inset 0 6px #F8D304 ;  }
+.s02btnBox .s02btn3 span, .s02btnBox .s02btn8 span{  box-shadow: inset 0 6px #fff;  }
+.s02btnBox .s02btn3 span, .s02btnBox .s02btn8 span{ 
+    /* border: 1px solid #414F63;  */
+}
+.s02btn4 span, .s02btn7 span{  box-shadow: inset 0 6px #203FA6 ;   }
+/*  section02 left Menu end   */
+
+.s02bg{ position: absolute; top: 200px; right: 0; }   
+.s02contents1{}
+.s02contents1{ width: 912px; padding-top: 102px ; color: #222222; opacity: 0;   }
+.s02roomName{ font-size: 48px; margin-bottom: 20px; float: left; }
+.s02RoomDetailBtn{  display: block; padding-top: 55px; padding-right: 20px;  float: right; cursor: pointer; position: relative; z-index: 50;
+}
+.s02RoomDetailBtn li{ list-style: disc ;}
+
+.s02roomSlide{ width : 912px; }
+.s02slideInner{ width: 912px; position: relative; }
+.s02roomSlide>div{ width: 912px; text-align: center; }
+
+.s02roomDesBox{ height: 102px; padding: 0px 10px 10px 10px; clear: both; 
+    /* border-top: 2px solid #fff;               */
+    border: 1px solid black;
+}
+.s02roomDesBox1{ background-color: rgba(249, 231, 231, 0.7); }
+.s02roomDesBox>span{ display: block; 
+}
+.s02roomDes{ width: 50%; height: 80%; padding: 20px 15px;  float: left;  line-height: 25px; }
+.s02roomFare{ width: 50%; padding-top: 5px; float: right;  text-align: right; font-size: 42px; }
+.s02bookLink{ width: 100px; float: right; text-align: right; }        
+.s02bookLink{ border-bottom:  1px solid black ; margin-left: 100px; 
+}
+
+.s02roomDetailBox{ height: 497px; 
+    background-color: rgba(255, 255, 255, 0.95); 
+    padding: 40px 20px 0 180px ; color: rgb(64,64,64, ); line-height: 30px;
+    transform: translatey( -600px ); position: relative;
+}
+.s02roomDetailInner{ display: flex ;  gap: 200px; }
+.s02roomDetailBox span{ font-size: 20px; border-bottom: 1px solid rgba(220, 220, 220); line-height: 50px; }
+.s02roomDetailBox{ opacity: 0; }
+.s02closeBtn{ width: 24px; height: 24px;
+background-image: url(../img/closeBtn.png); cursor: pointer; 
+    position: absolute; top: 15px; right: 20px;
+}

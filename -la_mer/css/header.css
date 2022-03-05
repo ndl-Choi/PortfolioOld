@@ -1,0 +1,32 @@
+@charset 'utf-8';
+
+@font-face {
+    font-family: 'InfinitySans-RegularA1';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+        
+    header{
+          font-family: 'GowunDodum-Regular';   text-align: center; 
+          /* width: 50%; margin: auto; */
+    /* border: 1px solid #fff;  font-size: 30px; color: #fff; */
+    background-color: #fcfcfd;
+    /* background-color: rgba(252, 252, 253, 0.3); */    
+    border-bottom: 1px solid #333;     
+    opacity: 0; transition: 2s;
+
+    width: 100%;
+    /* background-color: rgb(19, 18, 18); */
+    display: flex; justify-content: space-between; 
+    padding: 0 5em; line-height: 2em; 
+     z-index: 100; position: fixed; top: 0; 
+     /* box-shadow: 10px 1px  rgb(19, 19, 19) ; */
+     }
+     address{ all:unset ; color: rgb(122, 122, 122); font-size: 0; }
